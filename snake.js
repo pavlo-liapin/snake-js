@@ -1,5 +1,14 @@
 /*global jQuery, _ */
 
+/*!
+ * SnakeJS UWC v0.1
+ * https://github.com/pavel-lyapin/snake-js
+ *
+ * Requires jQuery (http://jquery.com), Underscore.js (http://underscorejs.org)
+ *
+ * Released under the MIT license
+ * Date: Sat Nov 24 2012
+ */
 (function (window, $, _) {
     "use strict";
     var SnakeJS = SnakeJS || {};
