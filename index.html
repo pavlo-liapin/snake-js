@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!-- HTML5 Boilerplate used (http://html5boilerplate.com) -->
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,16 +10,66 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
     </head>
     <body>
+        <div class="wrapper">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="http://pavel-lyapin.github.com/snake-js/">Documentation</a></li>
+                <li><a href="https://github.com/pavel-lyapin/snake-js">Github</a></li>
+            </ul>
+            <h3 class="muted">UWC Snake JS</h3>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+            <div class="game-field"></div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+            <div class="controls">
+                <div class="game-alert alert alert-error">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    You lost!
+                </div>
+                <form class="form-inline control-group">
+                    <label for="game-name">Your name:</label>
+                    <input type="text" id="game-name" placeholder="John Doe">
+                </form>
+                <button class="game-start btn btn-large btn-success"> New game!</button>
+                <button class="game-pause btn btn-large btn-info">Pause</button>
+
+                <h4>Time:</h4> <i class="icon-time"></i> <span class="game-timer">00:00</span>
+                <h4>Level:</h4> <i class="icon-star"></i> <span class="game-level">0</span>
+                <h4>Best results:</h4>
+                <table class="table table-striped game-best-results">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Level</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#" class="game-history-clear">Clear history</a>
+            </div>
+
+            <div id="footer">
+                <p class="muted credit">Created by <a href="http://ua.linkedin.com/in/plyapin">Pavel Lyapin</a>,
+                    24.11.2012</p>
+            </div>
+        </div>
+
+        <!-- scripts section -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/underscore.min.js"></script>
+
         <script src="snake.js"></script>
+        <script>
+            // see documentation to find out available params
+            SnakeJS.init({
+                maxFood: 10
+            });
+        </script>
 
+        <a href="https://github.com/pavel-lyapin/snake-js"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
     </body>
 </html>
