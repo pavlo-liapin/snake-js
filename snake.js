@@ -203,8 +203,8 @@
         var hasSelfIntersection = this._inSnake(newPos);
 
         // snake confronted with border or with itself
-        if (newPos.x < 0 || newPos.x > this.settings.cols ||
-                newPos.y < 0 ||newPos.y > this.settings.rows || hasSelfIntersection) {
+        if (newPos.x < 0 || newPos.x >= this.settings.cols ||
+                newPos.y < 0 ||newPos.y >= this.settings.rows || hasSelfIntersection) {
             this.lose();
             return;
         }

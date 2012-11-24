@@ -8,9 +8,10 @@ Enjoy the 6-hour-made fun game from the Ukrainian Web Challenge III! Reach the g
 
 ## Tech specs:
 
-### JS Dependencies
+### Dependencies
 * [jQuery](http://jquery.com)
 * [Underscore.js](http://underscorejs.org)
+* localStorage to save results
 
 ### Size
 
