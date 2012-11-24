@@ -3,7 +3,7 @@ snake-js
 
 #  Welcome to Snake-JS from [UWC 3](http://iii.uwc.org.ua) final!
 ![SnakeJS](http://cdn1.iconfinder.com/data/icons/crystalproject/128x128/apps/ksnake.png)
-Enjoy the 6-hour-made fun game from the Ukrainian Web Challenge III! Reach the greatest level within the minimum time and be happy! :)
+Enjoy the 6-hour-made fun game from the Ukrainian Web Challenge III! Reach the greatest level within the minimum time and be happy! :) **Don't forget** to enter your name before start.
 
 
 ## Tech specs:
