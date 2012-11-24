@@ -5,11 +5,17 @@ snake-js
 ![SnakeJS](http://cdn1.iconfinder.com/data/icons/crystalproject/128x128/apps/ksnake.png)
 Enjoy the 6-hour-made fun game from the Ukrainian Web Challenge III! Reach the greatest level within the minimum time and be happy! :)
 
+
 ## Tech specs:
 
 ### JS Dependencies
 * [jQuery](http://jquery.com)
 * [Underscore.js](http://underscorejs.org)
+
+### Size
+
+* Dev: 10.8 kB
+* Minified: 4.79 kB
 
 ### Usage example
 ```html
